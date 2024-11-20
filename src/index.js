@@ -42,6 +42,10 @@ app.post('/notify', async (req, res) => {
   }
 })
 
+app.get('/', (req, res) => {
+  res.send('<span>Discord bot notifications for ETL</span>'); // ส่งข้อความในรูปแบบ HTML
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running at PORT ${PORT}`);
 })
